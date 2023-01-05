@@ -21,7 +21,7 @@ struct ContentView: View {
                 Text("What was the first computer bug?")
                     .font(.largeTitle)
                     .bold()
-                multilineTextAlignment(.leading)
+                    .multilineTextAlignment(.leading)
                 Spacer()
             }
             .foregroundColor(.white)
