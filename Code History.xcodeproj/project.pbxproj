@@ -11,6 +11,8 @@
 		8F0C646F295B857A0030BD90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C646E295B857A0030BD90 /* ContentView.swift */; };
 		8F0C6471295B857C0030BD90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0C6470295B857C0030BD90 /* Assets.xcassets */; };
 		8F0C6474295B857C0030BD90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0C6473295B857C0030BD90 /* Preview Assets.xcassets */; };
+		8F2ADCAC2AD4635100BD1845 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2ADCAB2AD4635100BD1845 /* Question.swift */; };
+		8F2ADCAE2AD4678100BD1845 /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2ADCAD2AD4678100BD1845 /* ChoiceTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8F0C646E295B857A0030BD90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F0C6470295B857C0030BD90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F0C6473295B857C0030BD90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F2ADCAB2AD4635100BD1845 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8F2ADCAD2AD4678100BD1845 /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 		8F0C6460295B857A0030BD90 = {
 			isa = PBXGroup;
 			children = (
+				8F2ADCAB2AD4635100BD1845 /* Question.swift */,
 				8F0C646B295B857A0030BD90 /* Code History */,
 				8F0C646A295B857A0030BD90 /* Products */,
 			);
@@ -53,6 +58,7 @@
 			children = (
 				8F0C646C295B857A0030BD90 /* Code_HistoryApp.swift */,
 				8F0C646E295B857A0030BD90 /* ContentView.swift */,
+				8F2ADCAD2AD4678100BD1845 /* ChoiceTextView.swift */,
 				8F0C6470295B857C0030BD90 /* Assets.xcassets */,
 				8F0C6472295B857C0030BD90 /* Preview Content */,
 			);
@@ -95,7 +101,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					8F0C6468295B857A0030BD90 = {
 						CreatedOnToolsVersion = 14.1;
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2ADCAC2AD4635100BD1845 /* Question.swift in Sources */,
 				8F0C646F295B857A0030BD90 /* ContentView.swift in Sources */,
+				8F2ADCAE2AD4678100BD1845 /* ChoiceTextView.swift in Sources */,
 				8F0C646D295B857A0030BD90 /* Code_HistoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +157,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -181,6 +190,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -209,6 +219,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -241,6 +252,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
