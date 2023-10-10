@@ -39,7 +39,6 @@
 		8F0C6460295B857A0030BD90 = {
 			isa = PBXGroup;
 			children = (
-				8F2ADCAB2AD4635100BD1845 /* Question.swift */,
 				8F0C646B295B857A0030BD90 /* Code History */,
 				8F0C646A295B857A0030BD90 /* Products */,
 			);
@@ -56,6 +55,7 @@
 		8F0C646B295B857A0030BD90 /* Code History */ = {
 			isa = PBXGroup;
 			children = (
+				8F2ADCAB2AD4635100BD1845 /* Question.swift */,
 				8F0C646C295B857A0030BD90 /* Code_HistoryApp.swift */,
 				8F0C646E295B857A0030BD90 /* ContentView.swift */,
 				8F2ADCAD2AD4678100BD1845 /* ChoiceTextView.swift */,

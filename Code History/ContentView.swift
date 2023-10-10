@@ -12,7 +12,7 @@ struct ContentView: View {
     questionText: "What was the first computer bug?",
     possibleAnswers: ["Ant", "Bettle", "Moth", "Fly"],
     correctAnswerIndex: 2)
-    let mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
+    @State var mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
     var body: some View {
         ZStack{
             mainColor.ignoresSafeArea()
@@ -27,25 +27,15 @@ struct ContentView: View {
                     .multilineTextAlignment(.leading)
                 Spacer()
                 HStack {
-                    Button {
-                        print("Selected Choice 1")
-                    } label: {
-                        ChoiceTextView(choiceText: question.possibleAnswers[0])
-                    }
-                    Button {
-                        print("Selected Choice 2")
-                    } label: {
-                        ChoiceTextView(choiceText: question.possibleAnswers[1])
-                    }
-                    Button {
-                        print("Selected Choice 3")
-                    } label: {
-                        ChoiceTextView(choiceText: question.possibleAnswers[2])
-                    }
-                    Button {
-                        print("Selected Choice 4")
-                    } label: {
-                        ChoiceTextView(choiceText: question.possibleAnswers[3])
+                    ForEach(0..<question.possibleAnswers.count, id: \.self ) { answerIndex in
+                        Button(action: {
+                            print("Tapped on option with the text: \(question.possibleAnswers[answerIndex])")
+                            
+                            // The line below should be the last thing learners add in this article
+                            mainColor = answerIndex == question.correctAnswerIndex ? .green : .red
+                        }) {
+                            ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
+                        }
                     }
                 }
             }
